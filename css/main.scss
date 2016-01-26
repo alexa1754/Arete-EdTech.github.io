@@ -27,7 +27,11 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+$sf-1:  #a3c1ad;
+$sf-2:  #a0d6b4;
+$sf-3:  #5f9ea0;
+$sf-4:  #317873;
+$sf-5:  #49796b;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -42,7 +46,41 @@ $on-laptop:        800px;
     }
 }
 
+body {
+  background-color: $sf-4;
+}
 
+
+.ribbon {
+  $text: mix($sf-3, $text-color, 50%);
+  color: $text;
+  background-color: $sf-2;
+  width: 100vw;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+  box-shadow: 0 0 6px 0 gray;
+
+  h2 {
+    font-size: 2rem;
+    > small {
+      font-size: 0.6em;
+      font-weight: 100;
+      color: lighten($text, 30%);
+    }
+  }
+}
+
+.definition {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

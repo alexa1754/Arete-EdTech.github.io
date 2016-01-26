@@ -1,23 +1,33 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+    var host = "areteedtech.org";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+          window.location.protocol = "https";
+    </script>
+    <meta charset="utf-8">
 
-<div class="home">
+    <title>Coming soon...</title>
+    <meta name="description" content="Coming soon.">
 
-  <h1 class="page-heading">Posts</h1>
+    <link rel="stylesheet" href="/css/main.css" />
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<body>
+    <div class="ribbon">
+        <div class="definition">
+            <h2>a&middot;re&middot;te <small>[ahr-i-<b>tey</b>]</small></h2>
+            <h3>noun</h3>
+            <em>the act of living up to ones full potential</em>
+        </div>
+    </div>
+</body>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>
