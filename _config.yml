@@ -1,14 +1,12 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Arete EdTech
+email: sandy@areteedtech.org
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Our mission: To promote computer science education opportunities in St. Louis area schools; with an emphasis on reaching low-income and female students.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://areteedtech.org" # the base hostname & protocol for your site
+twitter_username: AreteEdTech
+github_username: Arete-EdTech
 
 # Build settings
 markdown: kramdown

@@ -3,31 +3,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript">
-    var host = "areteedtech.org";
-      if ((host == window.location.host) && (window.location.protocol != "https:"))
-          window.location.protocol = "https";
-    </script>
-    <meta charset="utf-8">
-
-    <title>Coming soon...</title>
-    <meta name="description" content="Coming soon.">
-
-    <link rel="stylesheet" href="/css/main.css" />
-
-    <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    {% include head.html %}
 </head>
 
 <body>
-    <div class="ribbon">
-        <div class="definition">
-            <h2>a&middot;re&middot;te <small>[ahr-i-<b>tey</b>]</small></h2>
-            <h3>noun</h3>
-            <em>the act of living up to ones full potential</em>
+    <nav class="navbar navbar-full navbar-light navbar-theme">
+        <div class="container">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link" id="logo" href="#"><img src="/img/logo.png" height="36px" /></a>
+            </div>
+            <div class="nav navbar-nav pull-xs-right">
+                <a class="nav-item nav-link" href="#">Donate</a>
+            </div>
         </div>
+    </nav>
+    <div class="container" id="container">
+        <div class="row" id="definition">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="definition">
+                    <h2>a&middot;re&middot;te <small>[ahr-i-<b>tey</b>]</small></h2>
+                    <h3>noun</h3>
+                    <em>the act of living up to ones full potential</em>
+                </div>
+            </div>
+        </div>
+        <!-- /Row -->
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <h2 class="text-xs-center">Our Mission</h2>
+                <p>To promote computer science education opportunities in St. Louis area schools; with an emphasis on reaching low-income and female students.
+                </p>
+            </div>
+        </div>
+        <!-- /Row -->
     </div>
+    <!-- /Container -->
 </body>
 
 </html>

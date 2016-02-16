@@ -27,11 +27,18 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$sf-1:  #a3c1ad;
-$sf-2:  #a0d6b4;
-$sf-3:  #5f9ea0;
-$sf-4:  #317873;
-$sf-5:  #49796b;
+// seafoam 
+//$sf-1:  #a3c1ad;
+//$sf-2:  #a0d6b4;
+//$sf-3:  #5f9ea0;
+//$sf-4:  #317873;
+//$sf-5:  #49796b;
+
+$sf-1: #b8ecd7;
+$sf-2: #083643;
+$sf-3: #b1e001;
+$sf-4: #cef09d;
+$sf-5: #476c5e;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -47,33 +54,29 @@ $sf-5:  #49796b;
 }
 
 body {
-  background-color: $sf-4;
+  background-color: $sf-5;
+  color: $sf-1;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $sf-4;
+  font-weight: 300;
+}
 
-.ribbon {
-  $text: mix($sf-3, $text-color, 50%);
-  color: $text;
-  background-color: $sf-2;
-  width: 100vw;
-  padding: 20px;
-  position: fixed;
-  top: 50%;
+#container {
+  padding-top: 40px;
+}
 
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+#definition {
+  margin-bottom: 40px;
+}
 
-  box-shadow: 0 0 6px 0 gray;
+#logo {
+  padding: 0;
+}
 
-  h2 {
-    font-size: 2rem;
-    > small {
-      font-size: 0.6em;
-      font-weight: 100;
-      color: lighten($text, 30%);
-    }
-  }
+.navbar-theme {
+  background-color: $sf-1;
 }
 
 .definition {
@@ -82,9 +85,4 @@ body {
   margin-right: auto;
 }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "palette"
